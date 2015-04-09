@@ -1,0 +1,19 @@
+{
+  "name": "addictive-games",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Smolli/addictive-games",
+  "authors": [
+    "Christian Smolka <christian.smolka@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
