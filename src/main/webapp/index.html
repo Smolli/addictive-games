@@ -5,8 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="react.min.js"></script>
-        <script src="JSXTransformer.js"></script>
+        <!-- build:js app/deps.js -->
+        <script src="deps/react/react.min.js"></script>
+        <script src="deps/react/JSXTransformer.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
         <script type="text/jsx">
@@ -16,7 +18,7 @@
                           <div className="board">
                             <BoardRow />
                           </div>
-                          );  
+                          );
                 }
             });
             var BoardRow = React.createClass({
@@ -39,7 +41,7 @@
                             );
                 }
             });
-            
+
             React.render(
                     <Board />,
                     document.getElementById('main')
