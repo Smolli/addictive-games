@@ -1,0 +1,40 @@
+
+Dimension ->
+Width ^
+
+3     X X
+2   X
+1 X
+  C S F N
+
+
+Dimensions:
+C Colour
+S Shape
+F Filling
+N Count
+
+Widths:
+
+Colour
+1 Red
+2 Yellow
+3 BLue
+
+Shape
+1 Triangle
+2 Circle
+3 Rectangle
+
+Filling
+1 Emtpy
+2 Half
+3 Full
+
+Count
+1 One
+2 Two
+3 Three
+
+
+

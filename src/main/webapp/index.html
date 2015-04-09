@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="react.min.js"></script>
+        <script src="JSXTransformer.js"></script>
+    </head>
+    <body>
+        <script type="text/jsx">
+            var Board = React.createClass({
+                render: function(){
+                  return (
+                          <div className="board">
+                            <BoardRow />
+                          </div>
+                          );  
+                }
+            });
+            var BoardRow = React.createClass({
+                render: function() {
+                    return (
+                            <div className="board-row">
+                                <Tile />
+                                <Tile />
+                                <Tile />
+                            </div>
+                            );
+                }
+            });
+            var Tile = React.createClass({
+                render: function() {
+                    return (
+                            <div className="tile">
+                                Tile
+                            </div>
+                            );
+                }
+            });
+            
+            React.render(
+                    <Board />,
+                    document.getElementById('main')
+            );
+        </script>
+
+
+        <div id="main"></div>
+
+    </body>
+</html>
