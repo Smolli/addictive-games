@@ -1,0 +1,19 @@
+article#triples {
+    margin: 0px;
+    padding: 30px;
+    width: 100%;
+
+    div.card {
+        overflow: hidden;
+        width: 64px;
+        height: 64px;
+        background-color: #adc1a3;
+        border: 5px solid transparent;
+        margin: 4px;
+        display: inline-block;
+
+        &.selected {
+            border-color: #1bc18c;
+        }
+    }
+}

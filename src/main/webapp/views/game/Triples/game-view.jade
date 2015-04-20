@@ -1,0 +1,8 @@
+section
+    article#triples
+        #cards
+            .card( ng-repeat = "tile in board.tiles" )&attributes({
+                'ng-click' : "selectTile(tile.id)",
+                'ng-class' : "{true: 'selected', false: '' }[tile.selected]"
+            })
+                img( src = "img/{{ tile.values }}.png" )

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="create table Board" author="Smolli">
+        <createTable tableName="T_BOARD">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="remaining" type="tinyint"/>
+            <column name="dimensions" type="tinyint"/>
+            <column name="values" type="tinyint"/>
+            <column name="game_id" type="bigint"/>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="T_BOARD"
+                                 baseColumnNames="game_id"
+                                 constraintName="fk_board_game_id"
+                                 referencedTableName="T_GAME"
+                                 referencedColumnNames="id"/>
+
+        <createTable tableName="T_TILE">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="values" type="varchar(10)"/>
+            <column name="board_id" type="bigint"/>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="T_TILE"
+                                 baseColumnNames="board_id"
+                                 constraintName="fk_tile_board_id"
+                                 referencedTableName="T_BOARD"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>

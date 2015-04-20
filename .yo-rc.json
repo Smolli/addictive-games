@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "baseName": "games",
+    "packageName": "de.igeri.labs.games",
+    "packageFolder": "de/igeri/labs/games",
+    "authenticationType": "cookie",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "useCompass": true,
+    "buildTool": "gradle",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8"
+  }
+}

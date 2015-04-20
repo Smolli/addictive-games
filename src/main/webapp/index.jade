@@ -1,0 +1,29 @@
+doctype html
+html
+    head
+        title Tolle Spiele
+        meta( charset = "UTF-8" )
+        meta( name = "viewport", content = "width=device-width, initial-scale=1.0" )
+        // build:js js/deps.js
+        script( src = "bower_components/jquery/dist/jquery.min.js" )
+        script( src = "bower_components/angular/angular.js" )
+        script( src = "bower_components/angular-route/angular-route.js" )
+        script( src = "bower_components/angular-resource/angular-resource.js" )
+        script( src = "scripts/http-auth-interceptor.js" )
+        // endbuild
+        // build:css css/style.css
+        link( rel = "stylesheet", href = "views/games-style.css" )
+        link( rel = "stylesheet", href = "views/game/Triples/Triples-style.css" )
+        // endbuild
+    body( ng-app = "app" )
+        header
+        section#content( ng-view )
+        footer
+        // build:js js/app.js
+        script( src = "views/app.js" )
+        script( src = "views/app-router.js" )
+        script( src = "views/app-auth.js" )
+        script( src = "views/games-controller.js" )
+        script( src = "views/game/Triples/Triples-controller.js" )
+        // endbuild
+

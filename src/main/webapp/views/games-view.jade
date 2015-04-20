@@ -1,0 +1,9 @@
+section( ng-cloak )
+    h1 Wähle ein Spiel
+    = 'Aber sei gewarnt, es könnte süchtig & schnell abhängig machen!'
+
+    #games
+    ul
+        li.game(ng_repeat = "game in games" )
+            a(href = "#/{{game}}" ) {{game}}
+
