@@ -3,7 +3,7 @@
     #running-games( ng-show = "games.length > 0" )
         .game( ng-repeat = "game in games" )
             .time
-                a( href = "javascript:;" )&attributes({ "ng-click" : "play(game.id)" }) {{game.started}}
+                a( href="", ng-click = "play(game.id)" ) {{game.started}}
     h5( ng-show = "games.length === 0" )= 'Du hast noch kein Spiel gestartet.'
     #new-game
         = '...oder starte eine neues'
